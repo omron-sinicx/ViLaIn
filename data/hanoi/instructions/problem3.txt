@@ -1,0 +1,1 @@
+Move all disks to the rightmost peg while keeping a rule that larger disks are below.
