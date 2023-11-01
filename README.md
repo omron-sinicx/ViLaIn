@@ -67,6 +67,7 @@ python scripts/main.py \
 ```
 
 ### Evaluating Generated PDDL Problems and Found Plans
+To evaluate the generated PDDL problems and validate the found plans, run:
 
 ```
 export domain=cooking
@@ -83,7 +84,7 @@ python scripts/evaluate.py \
 ```
 
 ### Refining Generated PDDL Problems
-To refine the generated PDDL, run:
+To refine the generated PDDL problems by corrective reprompting, run:
 ```
 export domain=cooking
 export downward_dir=./downward
