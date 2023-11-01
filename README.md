@@ -30,7 +30,7 @@ data
 - `refine_once`: the results by applying corrective reprompting for the problems in `plain`
 - `refine_twice`: the results by applying corrective reprompting for the problems in `refine_once`
 
-## How-To-Use
+## Getting Started
 ### Detecting Objects and Generating Captions
 To detect objects with bounding boxes and generate captions, run:
 ```
