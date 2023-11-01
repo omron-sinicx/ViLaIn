@@ -2,10 +2,7 @@
 An official implementation of Vision-Language Interpreter (ViLaIn)
 
 ## Requirements
-- This implementation requires `Python>=3.10`. It also requires installing `torch>=2.0.0` following the instruction in https://pytorch.org/ and OpenAI API as:
-```
-pip install openai
-```
+- This implementation requires `Python>=3.10` and `torch>=2.0.0`. To install PyTorch, please follow the instruction in https://pytorch.org/.
 
 - Install [fast-downward](https://github.com/aibasel/downward) and [VAL](https://github.com/KCL-Planning/VAL) following [the build instructions](https://github.com/aibasel/downward/blob/main/BUILD.md). After the installation, copy the `validate` binary under the `downward` directory.
 
@@ -15,7 +12,7 @@ pip install openai
 `data` contains PDDL files, observations, and instructions for three domains, which we denoted the ProDG dataset in the paper. This directory also contains annotated bounding boxes in `annotated_bboxes`. The directory structure is as follows:
 ```
 data
- └─{domain}
+ └─domains
     └─domain.pddl                   (A PDDL domain file)
     └─problems                      (PDDL problem files)
        └─problem*.pddl
@@ -28,10 +25,10 @@ data
 ```
 
 ## Results
-`results/reported_results` contains the generated PDDL problems and found plans reported in the paper. In the directory, there are also threesub directories for each domain:
+`results/reported_results` contains the generated PDDL problems and found plans reported in the paper. In the directory, there are also three subdirectories for each domain:
 - `plain`: the results without corrective reprompting
-- `refine_once`: the results refined by applying corrective reprompting for the problems in `plain`
-- `refine_twice`: the results refined by applying corrective reprompting for the problems in `refine_once`
+- `refine_once`: the results by applying corrective reprompting for the problems in `plain`
+- `refine_twice`: the results by applying corrective reprompting for the problems in `refine_once`
 
 ## How-To-Use
 ### Detecting Objects and Generating Captions
