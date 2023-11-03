@@ -1,5 +1,5 @@
 # ViLaIn
-An official implementation of Vision-Language Interpreter (ViLaIn)
+An official implementation of Vision-Language Interpreter (ViLaIn). See [our paper](http://arxiv.org/abs/2311.00967) for more details.
 
 ## Requirements
 - This implementation requires `Python>=3.10` and `torch>=2.0.0`. To install PyTorch, please follow the instruction in https://pytorch.org/.
@@ -101,6 +101,18 @@ python scripts/main.py \
     --refine_problem \
     --use_cot \
     --find_plan
+```
+
+## Citation
+```
+@misc{shirai2023visionlanguage,
+      title={Vision-Language Interpreter for Robot Task Planning}, 
+      author={Keisuke Shirai and Cristian C. Beltran-Hernandez and Masashi Hamaya and Atsushi Hashimoto and Shohei Tanaka and Kento Kawaharazuka and Kazutoshi Tanaka and Yoshitaka Ushiku and Shinsuke Mori},
+      year={2023},
+      eprint={2311.00967},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
 ```
 
 
